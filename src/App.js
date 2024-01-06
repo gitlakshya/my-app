@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Element } from 'react-scroll';
 import './App.css';
+
+import Header from './components/Header';
+import Landing from './components/Landing';
+import UpcomingTreks from './components/UpcomingTreks';
+import SeasonalTreks from './components/SeasonalTreks';
+import WhyChooseUs from './components/WhyChooseUs';
+import FAQ from './components/FAQ';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Header />
+        <Element name="home">
+          <Landing />
+        </Element>
+        <Element name="upcomingTreks">
+          <UpcomingTreks />
+        </Element>
+        <Element name="seasonalTreks">
+          <SeasonalTreks />
+        </Element>
+        <Element name="whyChooseUs">
+          <WhyChooseUs />
+        </Element>
+        <Element name="faq">
+          <FAQ />
+        </Element>
+      </div>
+    </Router>
   );
 }
 
