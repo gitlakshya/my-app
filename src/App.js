@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Element } from 'react-scroll';
 import './App.css';
 
-import Header from './components/Header';
-import Landing from './components/Landing';
-import UpcomingTreks from './components/UpcomingTreks';
-import SeasonalTreks from './components/SeasonalTreks';
-import WhyChooseUs from './components/WhyChooseUs';
-import FAQ from './components/FAQ';
+import Header from './components/header';
+import Landing from './components/landing';
+import UpcomingTreks from './components/upcomingTreks';
+import SeasonalTreks from './components/seasonalTreks';
+import WhyChooseUs from './components/whyUs';
+import FAQ from './components/faq';
 
 function App() {
   return (

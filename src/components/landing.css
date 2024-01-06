@@ -1,0 +1,19 @@
+.landing-container {
+    position: relative;
+  }
+  
+  .landing-background {
+    background: url('C:/Users/Hp/Downloads/shivling.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .landing-text {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+  }
+  
